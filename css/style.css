@@ -1,0 +1,506 @@
+/* Обнуление */
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+}
+ul,
+ol,
+li {
+	list-style: none;
+}
+img {
+	vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+html,
+body {
+	height: 100%;
+	line-height: 1;
+	font-size: 16px;
+	font-family: "Lato", sans-serif;
+}
+
+/*----------------------------------------*/
+
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+}
+.page {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+}
+
+/*-----------------------------------------*/
+.page__navigation {
+	grid-column-start: 1;
+	grid-column-end: 4;
+}
+.navigation {
+}
+
+.navigation__body {
+	display: flex;
+}
+
+.navigation__column:last-child {
+	flex: 0 1 100%;
+}
+.navigation__icon {
+	background-color: #000000;
+	padding-left: 10px;
+}
+.icon-nav {
+}
+.icon-nav__circls {
+}
+.circl {
+}
+.circl__list {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+.circl__item {
+}
+.circl__red::before {
+	content: "\2022";
+	color: #e64926;
+	font-size: 35px;
+}
+.circl__yelloow::before {
+	content: "\2022";
+	color: rgb(219, 167, 69);
+	font-size: 35px;
+}
+.circl__green::before {
+	content: "\2022";
+	color: #70cc16;
+	font-size: 35px;
+}
+.icon-nav__menu {
+}
+.menu-icon {
+}
+.meu-icon__list {
+}
+.menu-icon__item {
+}
+.icon-nav__plus {
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	margin-top: 51px;
+	padding-bottom: 23px;
+}
+.icon-nav__img {
+	padding: 15px;
+	border: 1px solid #919191;
+	border-radius: 50%;
+}
+.navigation__channels {
+	background-color: #25272a;
+}
+.channel {
+}
+
+.channel__title {
+	position: relative;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 24px;
+	color: #ffff;
+	padding: 23px 0px 30px 12px;
+}
+.channel__title::after {
+	content: url(../img/min-icon/navig/setting.png);
+	right: 12px;
+	top: 23px;
+	position: absolute;
+}
+.channel__subtitle {
+	position: relative;
+	font-size: 14px;
+	line-height: 17px;
+	color: #858585;
+	padding-left: 40px;
+}
+.channel__subtitle::before {
+	position: absolute;
+	content: url(../img/min-icon/navig/chat.png);
+	top: 0;
+	left: 10px;
+}
+.channel__main {
+}
+.main-channel {
+}
+.main-channel__title {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-left: 10px;
+	margin-top: 32px;
+	margin-bottom: 13px;
+}
+.title {
+	font-size: 12px;
+	line-height: 14px;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #919191;
+}
+.title__text {
+}
+.title__number {
+	padding-right: 12px;
+}
+.main-channel__text {
+}
+.text-menu {
+}
+.text-menu__list {
+}
+.text-menu__item {
+	padding-top: 6px;
+	padding-bottom: 6px;
+	padding-left: 20px;
+}
+.text-menu__item::before {
+	content: "#";
+	color: #ffff;
+	top: 0;
+	left: 0;
+}
+
+.text-menu__item:hover {
+	background-color: #919191;
+}
+.text-menu__item a {
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 14px;
+	font-style: normal;
+	color: #ffff;
+}
+
+.text-menu__link {
+}
+.chanel__friends {
+}
+.friend {
+}
+.friend__title {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 12px;
+	margin-bottom: 10px;
+	padding-left: 10px;
+}
+.friend__menu {
+}
+.menu-friend {
+}
+.menu-friend__list {
+}
+.menu-friend__item {
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 14px;
+	font-style: normal;
+	color: #ffff;
+	padding-left: 20px;
+	padding-top: 6px;
+	padding-bottom: 6px;
+}
+.menu-friend__item:hover {
+	cursor: pointer;
+}
+.menu-friend__item:nth-child(1)::before {
+	content: "\2022";
+	color: #70cc16;
+}
+.menu-friend__item:nth-child(3)::before {
+	content: "\2022";
+	color: #70cc16;
+}
+.menu-friend__item:nth-child(4)::before {
+	content: "\2022";
+	color: #70cc16;
+}
+
+.menu-friend__item:last-child {
+	padding-bottom: 15px;
+}
+/*-----------------------------*/
+.page__main {
+	grid-column-start: 4;
+	grid-column-end: 12;
+}
+.main-block {
+}
+.main-block__header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 30px;
+	border-bottom: 0.5px solid rgba(0, 0, 0, 0.23);
+	padding-bottom: 20px;
+}
+.header {
+}
+.header__logo {
+	position: relative;
+	font-family: "Lato", sans-serif;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 24px;
+	color: #000;
+	padding-left: 12px;
+}
+.header__logo::after {
+	content: url(../img/min-icon/main/star.png);
+	position: absolute;
+	top: 0;
+	padding-left: 5px;
+}
+.header__number {
+	font-family: "Lato", sans-serif;
+	position: relative;
+	font-size: 14px;
+	line-height: 17px;
+	color: #a4a4a4a4;
+	margin-left: 110px;
+}
+.header__number::before {
+	position: absolute;
+	content: url(../img/min-icon/main/ppl.png);
+	top: 0;
+	left: -13px;
+}
+.header__search {
+}
+.search {
+}
+
+.search__field {
+	border: 0.5px solid rgba(0, 0, 0, 0.1);
+	padding: 4px 20px 4px 4px;
+	color: #8d8d8d8d;
+	font-size: 14px;
+	line-height: 17px;
+	font-family: "Lato", sans-serif;
+	position: relative;
+	border-radius: 3%;
+}
+.search___btn {
+	position: absolute;
+	background: none;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: -20px;
+}
+.header__icon {
+}
+.icons {
+}
+.icons__navigat {
+}
+.navigat-menu {
+}
+.navigat-menu__list {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.navigat-manu__item {
+	padding-left: 40px;
+}
+.navigat-manu__item:last-child {
+	padding-right: 20px;
+}
+/*----------------------------*/
+.main-block__body {
+}
+.main-block__ppl {
+	margin-top: 12px;
+	padding-left: 10px;
+}
+.ppl {
+}
+.ppl__section-1 {
+	display: flex;
+}
+.ppl__img {
+	padding-right: 20px;
+}
+.ppl__text {
+}
+.ppl__title {
+	font-size: 12px;
+	line-height: 17px;
+	font-family: "Lato", sans-serif;
+	color: #000;
+	font-weight: 700;
+	padding-bottom: 4px;
+}
+.ppl__title span {
+	color: #8d8d8d8d;
+	padding-left: 6px;
+}
+.ppl__subtitle {
+	font-size: 13px;
+	line-height: 18px;
+	font-family: "Lato", sans-serif;
+	color: #3577ef;
+	font-weight: 400;
+}
+/*----------------------------*/
+.ppl__section-2 {
+	margin-top: 10px;
+	border-top: 0.5px solid rgba(0, 0, 0, 0.1);
+}
+.ppl__big-title {
+	font-size: 13px;
+	line-height: 18px;
+	font-family: "Lato", sans-serif;
+	color: #8d8d8d8d;
+	font-weight: 400;
+	text-align: right;
+	padding: 12px 0px 12px 8px;
+}
+
+.ppl__post {
+	display: flex;
+}
+.ppl__img {
+}
+.ppl__text {
+}
+.ppl__title {
+}
+.ppl__subtitle span {
+	font-size: 12px;
+	line-height: 17px;
+	font-family: "Lato", sans-serif;
+	color: #000;
+	font-weight: 700;
+	padding-bottom: 4px;
+}
+.ppl__image img {
+	max-width: 100%;
+}
+.ppl__section-3 {
+	margin-top: 10px;
+	border-top: 0.5px solid rgba(0, 0, 0, 0.1);
+}
+/*----------------------------*/
+.page__account {
+	grid-column-start: 12;
+	grid-column-end: 12;
+	background-color: rgba(0, 0, 0, 0.1);
+}
+.account {
+}
+.account__pic{
+}
+.account__body {
+}
+.account__name {
+	margin-top: 30px;
+	padding-left: 14px;
+}
+.name {
+}
+.name__first {
+	font-size: 16px;
+	line-height: 19px;
+	font-family: "Lato", sans-serif;
+	color: #000;
+	font-weight: 700;
+}
+.name__second {
+	font-size: 12px;
+	line-height: 14px;
+	font-family: "Lato", sans-serif;
+	color: #5f6164;
+	font-weight: 400;
+}
+.account__icon {
+}
+.account__list {
+	display: flex;
+}
+.account__item {
+	padding:6px 10px;
+	border-radius: 50%;
+	background-color: #fff;
+	margin: 12px;
+}
+.account__button {
+}
+.btn{
+	
+}
+.btn__first {
+	background-color: #3577ef;
+	color: #fff;
+	text-align: center;
+	padding: 10px 25px;
+	margin-left: 14px;
+	border-radius: 12px;
+}
+.btn__first:hover{
+	cursor: pointer;
+}
+.btn__second {
+	background-color: #3577ef;
+	border-radius: 12px;
+	color: #fff;
+	padding: 10px;
+}
+.btn__second:hover{
+	cursor: pointer;
+}
+.account__username {
+	margin-top: 12px;
+}
+.username {
+	margin-left: 14px;
+}
+.username__use {
+	font-size: 12px;
+	line-height: 14px;
+	font-family: "Lato", sans-serif;
+	color: #5f6164;
+	font-weight: 400;
+}
+.username__log {
+	font-size: 14px;
+	line-height: 17px;
+	font-family: "Lato", sans-serif;
+	color: #000;
+	font-weight: 400;
+}
+.accont__skype {
+	margin-top: 21px;
+}
+.accont__timezone {
+	margin-top: 21px;
+}
